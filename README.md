@@ -15,3 +15,60 @@ Task Manager API is a RESTful backend service built using Express.js and MongoDB
 
 1. Clone this repository:  
 git clone https://github.com/dheemanthpj/task-manager-api.git
+
+2. Install dependencies: npm install
+ 
+3. Create a `.env` file based on `.env.example` and fill in your environment variables such as: MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+ 
+4. Start the development server:  npm run dev
+
+## API Endpoints
+
+- `POST /auth/signup`  
+  Register a new user  
+  Body (JSON):
+{
+"username": "yourusername",
+"password": "yourpassword"
+}
+
+- `POST /auth/login`  
+Login and receive a JWT token  
+Body (JSON):  
+{
+"username": "yourusername",
+"password": "yourpassword"
+}
+
+- `GET /tasks/health`  
+API health check (no authentication required)
+
+- `POST /tasks`  
+Create a new task (authentication required)  
+Header:  Authorization: Bearer <your_jwt_token>
+Body (JSON):  
+{
+"title": "Task title here"
+}
+
+- `GET /tasks`  
+Get all tasks of the logged-in user (authentication required)
+
+- `GET /tasks/:id`  
+Get a specific task by ID (authentication required)
+
+- `PATCH /tasks/:id`  
+Update a task (authentication required)
+
+- `DELETE /tasks/:id`  
+Delete a task (authentication required)
+
+## Deployment
+Your API is deployed at: `https://your-live-api-url.com`
+
+## License
+This project is licensed under the ISC License.
+
+
