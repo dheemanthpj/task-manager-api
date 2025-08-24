@@ -65,8 +65,6 @@ Update a task (authentication required)
 - `DELETE /tasks/:id`  
 Delete a task (authentication required)
 
-## Deployment
-Your API is deployed at: `https://your-live-api-url.com`
 
 
 
