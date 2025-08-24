@@ -66,7 +66,8 @@ Update a task (authentication required)
 Delete a task (authentication required)
 
 ##Deployment
-My API is Deployed Using Render and Live at: https://task-manager-api4.onrender.com
+API is deployed at: https://task-manager-api4.onrender.com
+
 
 
 
