@@ -7,6 +7,11 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
+// Root route for base URL
+app.get('/', (req, res) => {
+  res.send('Task Manager API is running.');
+});
+
 app.use(express.json());
 app.use('/auth', authRoutes);
 app.use('/tasks', taskRoutes);
