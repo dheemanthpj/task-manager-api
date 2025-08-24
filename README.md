@@ -68,7 +68,5 @@ Delete a task (authentication required)
 ## Deployment
 Your API is deployed at: `https://your-live-api-url.com`
 
-## License
-This project is licensed under the ISC License.
 
 
